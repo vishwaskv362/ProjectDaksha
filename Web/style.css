@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.hero
+{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(background.png);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  position : relative;
+}
+.nav-bar{
+  display: flex;
+  padding: 40px 120px;
+}
+.nav-logo {
+  width: 130px;
+}
+.nav-links
+{
+  flex:1;
+}
+.nav-links ul{
+  margin-left: 50px ;
+  display: inline:
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+}
+.nav-links ul a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after
+{
+  content: '';
+  width:0;
+  height: 2px;
+  background: yellow;
+  display: block;
+  margin: auto;
+  transition:0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn1 {
+  background-color: #4CAF50; 
+  color: black; 
+  border: 2px ;
+}
+
+.btn1:hover {
+  background-color: rgb(98, 224, 98);
+  color: black;
+}
+.nav-links .btn{
+  float : right;
+}
+
+.banner-title{
+  margin: 80px 130px;
+  color: #fff;
+}
+.banner-title h1{
+  font-size: 40px;
+}
+.banner-title h1 span{
+color: #4CAF50;
+}
+@media (max-width: 700px){
+  .banner-title{
+    margin: 80px 40px;
+  }
+  .banner-title h1{
+   font-size : 20px:
+  }
+
+  
+}
+.container{
+  position: relative;
+  width: 650px;
+  height: 350px;
+  margin-left: 20px;
+  background: #000;
+  opacity: 0.8;
+  border-radius: 8px
+
+}
+
+.container2{
+  position: relative;
+  width: 500px;
+  height: 200px;
+  margin-left: 20px;
+  background: #000;
+  opacity: 0.8;
+  border-radius: 8px
+
+}
+
+
+.info{
+  color: white;
+  opacity:1;
+  position:relative;
+   z-index:1;
+  padding: 10px
+}
+.info span{
+  color: #4CAF50;
+}
